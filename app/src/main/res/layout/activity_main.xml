@@ -1,0 +1,230 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <EditText
+        android:id="@+id/et_inputmath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="100px"
+        android:gravity="start|top"
+        android:textColor="@color/black"
+        android:ems="15"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:inputType="textMultiLine"/>
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20px"
+        android:text=""
+        android:textSize="100px"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="AC"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_chia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_nhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_so7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_cong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_so4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_tru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_so1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_so3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_chiadu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="%"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_phay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=","
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button" />
+
+        <Button
+            android:id="@+id/bt_so0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+
+        <Button
+            android:id="@+id/bt_bang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="="
+            android:layout_margin="5px"
+            android:background="@drawable/radius_button"/>
+    </LinearLayout>
+</LinearLayout>
+
+
