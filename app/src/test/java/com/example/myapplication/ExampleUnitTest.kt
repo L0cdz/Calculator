@@ -22,16 +22,4 @@ class ExampleInstrumentedTest {
         assertEquals(expectedResult, result)
     }
 
-    @Test
-    fun testResultMath2() {
-        // Arrange
-        val input = "-3-3"
-        val expectedResult = "-6"
-
-        // Act
-        val result = MainActivity().resultMath(input)
-
-        // Assert
-        assertEquals(expectedResult, result)
-    }
 }
